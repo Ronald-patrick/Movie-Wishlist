@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie-Wishlist</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <script src="app.js" defer></script>
+    
+</head>
+<body>
+  
+  <div class="contain">
+    <p>
+       Movie-Wishlist
+    </p>
+</div>
+    <hr class="type_3">
+
+    <div class="container">
+              <div class="input-group-append">
+                  <br>
+                <button id="btn-addmv" class="btn-add" type="button">Add Movie</button> <button class="btn-add" onclick="clearStorage()">Clear-All</button>
+              </div>
+    
+            <ul id="dynamic-list">
+                
+            </ul>
+    
+          </div>
+          <div class="info">
+            
+          </div>
+
+          <div class="bg-modal">
+
+            <div class="modal-content">
+              
+              <div class="close">+</div>
+              <div class="title">ADD MOVIE!</div>
+              
+              <div class="input_div">
+                <input autocomplete="off" id="movie_nameinp" type=text placeholder="Movie Name" class="input">
+                <br>
+                <select required name="genre" class="input" id="gen_inp" >
+                  <option value="" disabled selected>Genre</option>
+                  <option value="Comedy">Comedy</option>
+                  <option value="Action">Action</option>
+                  <option value="Horror">Horror</option>
+                  <option value="Suspense">Suspense</option>
+                </select>
+                <br>
+                <select required type=text placeholder="Status" class="input" id="status">
+                  <option value="" disabled selected>Status</option>
+                  <option value="Watched">Watched</option>
+                  <option value="Unwatched">Unwatched</option>
+                </select>
+                <br>
+                <button onclick="add_movie()" class="btn-add">ADD</button>
+              </div>
+            </div>
+
+          </div>
+
+          
+         
+          <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+
+        </body>
+</html>
+
